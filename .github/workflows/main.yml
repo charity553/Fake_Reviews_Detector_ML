@@ -37,7 +37,8 @@ jobs:
         with:
           context: ./
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:${{ github.sha }}, ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/fake_reviews_detector_ml:${{ github.sha }}, ${{ secrets.DOCKER_USERNAME }}/fake_reviews_detector_ml:latest
+
 
       - name: Set up SSH
         run: |
